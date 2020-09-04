@@ -8,7 +8,6 @@ use Svv\Framework\App;
 class Database
 {
 
-    public string $test;
     public PDO $pdo;
 
     public function __construct (array $config)
