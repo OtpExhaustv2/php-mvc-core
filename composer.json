@@ -8,7 +8,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Svv\\Framework": "."
+            "Svv\\Framework\\": "."
         }
     },
     "require": {}
