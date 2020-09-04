@@ -1,0 +1,10 @@
+{
+    "name": "svv/php-mvc-core",
+    "authors": [
+        {
+            "name": "Van Vreckem",
+            "email": "svanvreckem@helb-prigogine.be"
+        }
+    ],
+    "require": {}
+}
