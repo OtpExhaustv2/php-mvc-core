@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Core\Form\Fields;
+namespace Svv\Framework\Form\Fields;
 
 class TextAreaField extends BaseField
 {

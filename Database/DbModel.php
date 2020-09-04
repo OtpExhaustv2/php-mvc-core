@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Core\Database;
+namespace Svv\Framework\Database;
 
-use App\Core\Model;
-use App\Core\App;
+use Svv\Framework\Model;
+use Svv\Framework\App;
 
 abstract class DbModel extends Model
 {

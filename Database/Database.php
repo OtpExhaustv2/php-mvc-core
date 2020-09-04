@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Core\Database;
+namespace Svv\Framework\Database;
 
 use PDO;
-use App\Core\App;
+use Svv\Framework\App;
 
 class Database
 {

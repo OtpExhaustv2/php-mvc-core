@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Core\Form;
+namespace Svv\Framework\Form;
 
-use App\Core\Model;
-use App\Core\Form\Fields\InputField;
-use App\Core\Form\Fields\TextAreaField;
+use Svv\Framework\Model;
+use Svv\Framework\Form\Fields\InputField;
+use Svv\Framework\Form\Fields\TextAreaField;
 
 class Form
 {
@@ -33,9 +33,9 @@ class Form
     }
 
     /**
-     * @param \App\Core\Model $model
+     * @param \Svv\Framework\Model $model
      * @param string          $attribute
-     * @return \App\Core\Form\Fields\InputField
+     * @return \Svv\Framework\Form\Fields\InputField
      */
     public function inputField (Model $model, string $attribute)
     {
@@ -43,9 +43,9 @@ class Form
     }
 
     /**
-     * @param \App\Core\Model $model
+     * @param \Svv\Framework\Model $model
      * @param string          $attribute
-     * @return \App\Core\Form\Fields\TextAreaField
+     * @return \Svv\Framework\Form\Fields\TextAreaField
      */
     public function textareaField (Model $model, string $attribute)
     {

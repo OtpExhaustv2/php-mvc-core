@@ -1,15 +1,15 @@
 <?php
 
-namespace App\Core;
+namespace Svv\Framework;
 
-use App\Core\Database\Database;
-use App\Core\Http\Response;
-use App\Core\Http\Request;
+use Svv\Framework\Database\Database;
+use Svv\Framework\Http\Response;
+use Svv\Framework\Http\Request;
 
 /**
  * Class App
  *
- * @package App\Core
+ * @package Svv\Framework
  */
 class App
 {
@@ -69,7 +69,7 @@ class App
     }
 
     /**
-     * @return \App\Core\Controller
+     * @return \Svv\Framework\Controller
      */
     public function getController (): Controller
     {
@@ -77,7 +77,7 @@ class App
     }
 
     /**
-     * @param \App\Core\Controller $controller
+     * @param \Svv\Framework\Controller $controller
      */
     public function setController (Controller $controller): void
     {
@@ -85,7 +85,7 @@ class App
     }
 
     /**
-     * @param \App\Core\UserModel $user
+     * @param \Svv\Framework\UserModel $user
      * @return bool
      */
     public function login (UserModel $user)

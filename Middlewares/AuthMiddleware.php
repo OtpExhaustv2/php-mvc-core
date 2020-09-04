@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Core\Middlewares;
+namespace Svv\Framework\Middlewares;
 
-use App\Core\App;
-use App\Core\Exceptions\ForbiddenException;
+use Svv\Framework\App;
+use Svv\Framework\Exceptions\ForbiddenException;
 
 class AuthMiddleware extends BaseMiddleware
 {
@@ -21,7 +21,7 @@ class AuthMiddleware extends BaseMiddleware
     }
 
     /**
-     * @throws \App\Core\Exceptions\ForbiddenException
+     * @throws \Svv\Framework\Exceptions\ForbiddenException
      */
     public function execute ()
     {

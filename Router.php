@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Core;
+namespace Svv\Framework;
 
-use App\Core\Exceptions\NotFoundException;
-use App\Core\Http\Request;
-use App\Core\Http\Response;
+use Svv\Framework\Exceptions\NotFoundException;
+use Svv\Framework\Http\Request;
+use Svv\Framework\Http\Response;
 
 class Router
 {
@@ -16,8 +16,8 @@ class Router
     /**
      * Router constructor.
      *
-     * @param \App\Core\Http\Request  $request
-     * @param \App\Core\Http\Response $response
+     * @param \Svv\Framework\Http\Request  $request
+     * @param \Svv\Framework\Http\Response $response
      */
     public function __construct (Request $request, Response $response)
     {
@@ -45,7 +45,7 @@ class Router
 
     /**
      * @return mixed|string|string[]
-     * @throws \App\Core\Exceptions\NotFoundException
+     * @throws \Svv\Framework\Exceptions\NotFoundException
      */
     public function resolve ()
     {
@@ -65,7 +65,7 @@ class Router
 
         if (is_array($callback))
         {
-            /** @var $controller \App\Core\Controller */
+            /** @var $controller \Svv\Framework\Controller */
             $controller = new $callback[0]();
             App::$app->controller = $controller;
             $controller->action = $callback[1];

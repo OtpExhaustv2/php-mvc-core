@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Core;
+namespace Svv\Framework;
 
-use App\Core\Database\DbModel;
+use Svv\Framework\Database\DbModel;
 
 abstract class UserModel extends DbModel
 {

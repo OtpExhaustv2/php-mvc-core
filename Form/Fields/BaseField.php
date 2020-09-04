@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Core\Form\Fields;
+namespace Svv\Framework\Form\Fields;
 
-use App\Core\Model;
+use Svv\Framework\Model;
 
 abstract class BaseField
 {
@@ -13,7 +13,7 @@ abstract class BaseField
     /**
      * Field constructor.
      *
-     * @param \App\Core\Model $model
+     * @param \Svv\Framework\Model $model
      * @param string          $attribute
      */
     public function __construct (Model $model, string $attribute)

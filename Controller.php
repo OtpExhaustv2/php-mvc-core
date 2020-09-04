@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Core;
+namespace Svv\Framework;
 
-use App\Core\Middlewares\BaseMiddleware;
+use Svv\Framework\Middlewares\BaseMiddleware;
 
 class Controller
 {
@@ -10,7 +10,7 @@ class Controller
     public string $action = "";
 
     /**
-     * @var \App\Core\Middlewares\BaseMiddleware[]
+     * @var \Svv\Framework\Middlewares\BaseMiddleware[]
      */
     protected array $middlewares = [];
 
@@ -49,7 +49,7 @@ class Controller
     /**
      * Return the Session class
      *
-     * @return \App\Core\Session
+     * @return \Svv\Framework\Session
      */
     public function session (): Session
     {
@@ -59,7 +59,7 @@ class Controller
     /**
      * Return the logged-in user
      *
-     * @return \App\Core\UserModel|null
+     * @return \Svv\Framework\UserModel|null
      */
     public function getUser ()
     {
@@ -69,7 +69,7 @@ class Controller
     /**
      * Add a middleware to the array
      *
-     * @param \App\Core\Middlewares\BaseMiddleware $middleware
+     * @param \Svv\Framework\Middlewares\BaseMiddleware $middleware
      */
     public function registerMiddleware (BaseMiddleware $middleware)
     {
@@ -77,7 +77,7 @@ class Controller
     }
 
     /**
-     * @return \App\Core\Middlewares\BaseMiddleware[]
+     * @return \Svv\Framework\Middlewares\BaseMiddleware[]
      */
     public function getMiddlewares (): array
     {
