@@ -6,10 +6,6 @@
             "email": "svanvreckem@helb-prigogine.be"
         }
     ],
-    "autoload": {
-        "psr-4": {
-            "Svv\\Framework\\": "."
-        }
-    },
+
     "require": {}
 }
